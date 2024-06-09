@@ -10,9 +10,6 @@ RUN apk --no-cache add \
 
 RUN answer build \
     --with github.com/apache/incubator-answer-plugins/connector-basic \
-    --with github.com/apache/incubator-answer-plugins/storage-s3 \
-    --with github.com/apache/incubator-answer-plugins/search-elasticsearch \
-    --with github.com/apache/incubator-answer-plugins/embed-basic \
     --with github.com/apache/incubator-answer-plugins/connector-google \
     --with github.com/apache/incubator-answer-plugins/captcha-google-v2 \
     --output /usr/bin/new_answer
